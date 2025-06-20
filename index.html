@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<meta name="description" content="Discover M & G Superstore — trusted since 2010 for fresh groceries, household essentials, and quality service." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frontend Project</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+	    <header>
+		    <h1>M & G Superstore Page</h1>
+			<p>Your Satisfaction Is Our Joy ❤</p>
+		</header>
+		<img src="https://i.postimg.cc/1XzJX9Qt/supersp.png" id="Superstore" alt="M & G" />
+		<nav id="navbar">
+		    <ul id="nav">
+		        <a href="#home">Home</a>
+			    <a href="#store">Store</a>
+			    <a href="#contact">contact</a>
+			</ul>
+		</nav>		
+		<section id="home">
+		<br>
+		<br>
+		    <h2>Welcome to M & G Product Page.</h2>
+                <p>
+                    M & G Superstore, established in 2010, is a family-run business owned by <strong>Micha Eze</strong> and supported by <strong>Goodness Eze</strong>. The store offers a diverse selection of products, prioritizing quality, customer service, and community satisfaction.
+                </p>
+                <p>
+                    With a wide range of offerings—from fresh produce to household essentials—M & G Superstore has become a trusted name, known for its commitment to excellence and customer satisfaction.
+                </p>
+	        <br>
+	        <div class="offer-section">
+		         <h2 class="offer">What Do We Offer</h2>
+		         <p>At M & G Superstore, we offer a wide range of products, including:</p>
+		         <ul>
+			        <li>Groceries and household essentials.</li>
+			        <li>Beers and beverages</li>
+			        <li>Car services</li>
+			        <li>And Many More</li>
+		        </ul>
+	        </div>
+        </section>
+
+		<section id="store">
+		    <h2>🛒 Explore Our Store</h2>
+			<p>Here are some of our product in our Store:</p>
+			<div class="product-grid">
+			    <figure>
+				    <img src="https://i.postimg.cc/gJWdNCgz/image-1.jpg" class="first-goods" alt="" />
+					<figcaption>Fresh Groceries</figcaption>
+				</figure>
+				<figure>
+				    <img src="https://i.postimg.cc/RhvDWLss/download-2024-06-15-T192243-451.jpg" class="second-goods" alt="" />
+					<figcaption>Beverages</figcaption>
+				</figure>
+				<figure>
+				    <img src="https://i.postimg.cc/wBS5PVNT/image-2.jpg" class="second-goods" alt="" />
+					<figcaption>Grapes</figcaption>
+				</figure>
+				<figure>
+				    <img src="https://i.postimg.cc/bdXKwb4z/image-3.jpg" class="second-goods" alt="" />
+					<figcaption>Fruits</figcaption>
+				</figure>
+				<figure>
+				    <img src="https://i.postimg.cc/5NLShCsj/download-2024-06-15-T185531-212.jpg" class="second-goods" alt="" />
+					<figcaption>Brutal Beers</figcaption>
+				</figure>
+				<figure>
+				    <img src="https://i.postimg.cc/yN1FrM0B/image-4.jpg" alit="" />
+					<figcaption>Vegetables</figcaption>
+				</figure>
+				<figure>
+				    <img src="https://i.postimg.cc/kM6WZFRV/image-5.jpg" alt="" />
+					<figcaption>Ice cream</figcaption>
+				</figure>
+				<figure>
+				    <img src="https://i.postimg.cc/P5hZPg3Z/image-6.jpg" alit="" />
+					<figcaption>Bred Beer</figcaption>
+				</figure>
+				<figure>
+				    <img src="https://i.postimg.cc/wvtRCgMK/image-7.jpg" alit="" />
+					<figcaption>Cornish Best</figcaption>
+				</figure>
+				<figure>
+				    <img src="https://i.postimg.cc/przhdCKq/image-8.jpg" alit="" />
+					<figcaption>Best Bitter</figcaption>
+				</figure>
+				<figure>
+				    <img src="https://i.postimg.cc/RZM6MchL/image-9.jpg" alit="" />
+					<figcaption>Tea Biscuits</figcaption>
+				</figure>
+				<figure>
+				    <img src="https://i.postimg.cc/ZqnWN4r9/image-10.jpg" alit="" />
+					<figcaption>Heineken Beer</figcaption>
+				</figure>
+				
+			</div>
+			<p><button class="booking" onclick="greetUser()">Book Now</button> or Reach out to Us through the Message Inbox</p>
+		</section>
+		<section id="contact">
+		    <h2 class="Us">Contact Us</h2>
+			<p class="contact-info" style="text-align: center;">Contact Us for More Information</p>
+			<form action="https://formspree.io/f/mgvkjdbr" method="POST" class="contact-form" onsubmit="showThankYou(event)">
+			    <label for="name">Name: </label>
+				<input type="text" id="name" name="name" placeholder="Enter your name" required />
+				<label for="email">Email: </label>
+				<input type="email" id="email" name="_replyto" placeholder="Enter your email" required />
+				<label for="message">Message: </label>
+				<textarea id="message" name="message" rows="4" placeholder="Enter a message"></textarea>
+				<button type="submit">Send</button>
+			</form>
+			<div id="thank-you-message" style="display:none; color:green; font-weight: bold; margin-top: 1rem;">Thank you for contacting us! your message has been sent.</div>
+		</section>
+		<footer>
+		    <p>&copy;2025 M & G Superstore</p>
+			<p stle="font-size: 12px;">Site developed by <a href="https://github.com/melodykellynwaogu" target="_blank" style="color: #fff; text-decoration:none;">Melody Kelly</a></p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
